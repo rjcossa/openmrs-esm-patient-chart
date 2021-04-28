@@ -7,7 +7,7 @@
     }
   },
   "workspaces": [
-    "packages/*"
+    "packages/esm-patient-allergies-app/*"
   ],
   "scripts": {
     "start": "openmrs develop --sources 'packages/esm-*-{app,lib}/'",
