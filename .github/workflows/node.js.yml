@@ -508,7 +508,7 @@ jobs:
 
     needs: build
 
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ github.event_name == 'release' }}
 
     steps:
       - uses: actions/checkout@v2
