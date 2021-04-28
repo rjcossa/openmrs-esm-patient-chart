@@ -505,7 +505,7 @@ deploy_patient_banner_app:
 
     needs: build
 
-    if: ${{ github.event_name == 'release' }}
+    if: ${{ github.event_name == 'push' }}
 
     steps:
       - uses: actions/checkout@v2
