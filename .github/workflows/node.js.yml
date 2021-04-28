@@ -63,15 +63,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_appointments_app:
     runs-on: ubuntu-latest
@@ -105,15 +97,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
 
   deploy_patient_attachments_app:
     runs-on: ubuntu-latest
@@ -147,15 +130,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_banner_app:
     runs-on: ubuntu-latest
@@ -189,15 +164,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_biometrics_app:
     runs-on: ubuntu-latest
@@ -231,15 +198,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_chart_app:
     runs-on: ubuntu-latest
@@ -273,15 +232,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_conditions_app:
     runs-on: ubuntu-latest
@@ -315,15 +266,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_forms_app:
     runs-on: ubuntu-latest
@@ -357,15 +300,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_immunizations_app:
     runs-on: ubuntu-latest
@@ -399,15 +334,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
 
   deploy_patient_medications_app:
     runs-on: ubuntu-latest
@@ -441,15 +367,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
 
   deploy_patient_notes_app:
     runs-on: ubuntu-latest
@@ -483,15 +400,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
 
   deploy_patient_programs_app:
     runs-on: ubuntu-latest
@@ -525,15 +433,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_test_results_app:
     runs-on: ubuntu-latest
@@ -567,15 +467,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   deploy_patient_vitals_app:
     runs-on: ubuntu-latest
@@ -609,15 +501,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DIGITAL_OCEAN_SPACES_ACCESS_KEY }}
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
-      - name: Update Importmap
-        uses: fjogeleit/http-request-action@master
-        with:
-          url: http://${{ secrets.DEPLOYER_HOST }}/services?env=prod
-          method: "PATCH"
-          username: ${{ secrets.DEPLOYER_USERNAME }}
-          password: ${{ secrets.DEPLOYER_PASSWORD }}
-          data: '{ "service":"${{ env.ESM_NAME }}","url":"https://spa-modules.nyc3.digitaloceanspaces.com/${{ env.ESM_NAME }}/${{ env.TIMESTAMP }}_${{ github.sha }}/${{ env.JS_NAME }}" }'
-          customHeaders: '{ "Accept": "application/json", "Content-Type": "application/json" }'
+
 
   pre_release:
     runs-on: ubuntu-latest
