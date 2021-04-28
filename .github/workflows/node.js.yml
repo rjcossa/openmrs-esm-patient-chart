@@ -64,7 +64,7 @@ jobs:
           AWS_S3_ENDPOINT: ${{ secrets.DIGITAL_OCEAN_SPACES_ENDPOINT }}
           SOURCE_DIR: "dist"
 
- deploy_patient_appointments_app:
+  deploy_patient_appointments_app:
     runs-on: ubuntu-latest
 
     env:
