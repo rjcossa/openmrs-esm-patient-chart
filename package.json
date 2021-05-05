@@ -7,7 +7,7 @@
     }
   },
   "workspaces": [
-    "packages/esm-patient-chart-*"
+    "packages/*"
   ],
   "scripts": {
     "start": "openmrs develop --sources 'packages/esm-*-app/'",
