@@ -2,7 +2,7 @@
 
 # OpenMRS ESM Patient Chart
 
-## What is this??
+## What is this?
 
 openmrs-esm-patient-chart is a patient dashboard microfrontend for the
 OpenMRS SPA. It provides a simple dashboard with cards detailing the
